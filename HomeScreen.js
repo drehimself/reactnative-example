@@ -52,7 +52,7 @@ export default class HomeScreen extends React.Component {
   }
 
   componentWillMount() {
-    fetch('https://reddit.com/r/aww.json')
+    fetch('https://reddit.com/r/aww.json?raw_json=1')
       .then(response => response.json())
       .then(data => {
         this.setState({
